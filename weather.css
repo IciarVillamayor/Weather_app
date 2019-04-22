@@ -1,0 +1,93 @@
+form{
+    margin: 1em;
+    box-shadow: 0;
+
+}
+
+#autocomplete-input:focus{
+    -webkit-appearance: none;
+}
+
+.fa-chevron-left{
+    font-size: 20px;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4em;
+}
+#main_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#city_name{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+#temp{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#details{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 90%;
+    justify-content: space-around;
+    margin-top: 3em;
+   
+}
+#weather_icon{
+    width: 200px;
+    height: 200px;
+}
+
+#temp_max{
+    display: flex;
+    flex-direction: column;
+   line-height: 12px;
+   align-items: center;
+}
+#temp_min{
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    margin-left: 1em;
+    align-items: center;
+}
+
+#humedad{
+    display: flex;
+    flex-direction: column;
+    line-height: 12px;
+    margin-left: 1em;
+    align-items: center;
+}
+
+#viento{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    align-items: center;
+    line-height: 12px;
+}
+.big-type{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+p{
+    margin-bottom: -.2em;
+    text-transform: uppercase;
+    font-size: 10px;
+    
+}

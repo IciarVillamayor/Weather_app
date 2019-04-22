@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="weather.css" />
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.css" />
+    <script src="jquery-2.2.4.js"></script>
+    <script src="weather.js"></script>
+    <script src="jquery.mobile-1.4.5.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf2gY4UqIOMYE4x904VBevhBZxzVyOpXk&libraries=places"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div data-role="page" data-theme="c" id="main">
+      <div data-role="panel" id="mipanel">
+        <ul
+          data-role="listview"
+          data-theme="a"
+          data-inset="true"
+          data-filter="true"
+          id="lista-tus-ciudades"
+          data-filter-placeholder="busca en tus ciudades"
+        >
+        
+          
+        </ul>
+        <a href="#añadir" data-transition="slideup" class="ui-btn"
+          >Añade una ciudad</a
+        >
+
+        <div data-transition="slideup" class="ui-btn" id="borrar">
+          Borra todo
+        </div>
+       
+      </div>
+
+      <div role="main" class="ui-content">
+        <a href="#mipanel"><span class="fas fa-bars"></span></a>
+        <div class="datos">
+        <div id="main_info">
+       
+          </div>
+          <div id="details">
+            
+          </div>
+        </div>
+        </div>
+      </div>
+     
+
+    <div data-role="page" data-theme="c" id="añadir">
+      <a href="#main" data-transition="slidedown"
+        ><span class="fa fa-chevron-left"></span
+      ></a>
+      <input id="autocomp" data-type="search" placeholder="Busca una ciudad" />
+      <a href="#main" data-transition="slidedown" id="submit" class="ui-btn"
+          >Añadir</a>
+         
+    </div>
+
+    <div data-role="page" id="modal" data-dialog="true">
+      <div data-role="header"><h1>ELIMINAR CIUDAD</h1></div>
+      <div role="main" class="ui-content">
+          <a href="#main" data-transition="pop" class="ui-btn">vuelveeee</a>
+          <div data-transition="slidedown" id="si" class="ui-btn"
+          >Sí</div>
+          <div data-transition="slidedown" id="no" class="ui-btn"
+          >Sí</div>
+              
+      </div>
+      <div data-role="footer" data-position="fixed"><h3>footer</h3></div>
+  </div>
+  </body>
+</html>
